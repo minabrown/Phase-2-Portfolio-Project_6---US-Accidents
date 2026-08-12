@@ -7,7 +7,7 @@ input_file = RAW_DIR / "ny_accidents.csv"
 
 df = pd.read_csv(input_file)
 
-CUTOFF = 125_000
+CUTOFF = 20_000
 
 for i in range(0, len(df), CUTOFF):
     part = df.iloc[i:i + CUTOFF]
